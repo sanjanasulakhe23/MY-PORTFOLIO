@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  background-color: #222;
+  color: white;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.toggle-theme {
+  cursor: pointer;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.about-container, .project-grid, .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 10%;
+}
+.project-card {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+}
+.tech-stack span {
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--section-bg);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+#contact textarea {
+  height: 150px;
+  resize: none;
+}
+
+#contact button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: var(--accent-color-dark);
+}
