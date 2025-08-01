@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #333;
+  background-color: #dbb2d9;
+  color: #000000;
   transition: background 0.3s, color 0.3s;
 }
 .dark-mode {
-  background-color: #121212;
+  background-color: #8a4c89;
   color: #fff;
 }
 .navbar {
@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10%;
-  background-color: #222;
+  background-color: #22131c;
   color: white;
 }
 .nav-links {
@@ -23,7 +23,7 @@ body {
   gap: 1.5rem;
 }
 .nav-links a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .toggle-theme {
@@ -34,12 +34,22 @@ body {
   font-size: 2rem;
   margin-top: 2rem;
 }
+.about-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
 .about-container, .project-grid, .tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  padding: 1rem 10%;
+  padding: 2rem 10%;
 }
 .project-card {
   background: #f4f4f4;
