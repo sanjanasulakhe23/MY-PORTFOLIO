@@ -1,91 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanjana Sulakhe | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjana | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome (Icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Sanjana</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#tech">Tech Stack</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf" download>Resume</a></li>
-      </ul>
-      <div class="toggle-theme">🌓</div>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Hi, I'm Sanjana 👋</h1>
+      <p class="lead">Aspiring Front-End Developer | Meta Certified</p>
+      <a href="#about" class="btn btn-primary btn-lg mt-3">Know More</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
       
-    </section>
-
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-container">
-        <div class="about-image">
-          <img src="assets/portfolio.jpg" alt="Sanjana Sulakhe">
-        </div>
-        <div class="about-text">
-          <h3>Hi, I'm <span class="highlight-name">Sanjana Sulakhe</span></h3>
-          <p>I’m an aspiring <strong>Data Analyst</strong> and final-year engineering student at <strong>RAIT</strong>, passionate about solving real-world problems using <strong>data, AI, and visualization tools</strong>. I thrive in fast-paced environments, love continuous learning, and enjoy building solutions through code.</p>
-          <p>With hands-on projects in <strong>Power BI</strong>, <strong>Python</strong>, and <strong>Flutter</strong>, I bring creativity, precision, and curiosity to everything I do.</p>
-        </div>
+      <!-- Profile Image -->
+      <div class="col-md-4 text-center">
+        <img src="assets/portfolio.jpg" alt="Profile" 
+             class="rounded-circle img-fluid shadow" style="max-width: 250px;">
       </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-grid">
+      
+      <!-- About Text -->
+      <div class="col-md-8">
+        <h2>About Me</h2>
         
-        <div class="project-card">
-         <a href="plant-disease.html" style="text-decoration: none; color: inherit;">
-         <h3>Plant Disease Detection App</h3>
-         <p>Built with Flutter and an ML model for real-time plant diagnosis.</p>
-         </a>
-        </div>
+        <!-- Short Lead -->
+        <p class="lead">
+          I’m <strong>Sanjana</strong>, a dedicated and versatile developer passionate about <b>data analytics, backend development, and front-end design</b>.
+        </p>
 
-        <div class="project-card">
-         <a href="covid-dashboard.html" style="text-decoration: none; color: inherit;">
-         <h3>COVID-19 Dashboard</h3>
-         <p>Power BI dashboard showing live COVID-19 trends and stats.</p>
-         </a>
-        </div>
+        <!-- Detailed Description -->
+        <p>
+          I am a <strong>hardworking</strong> and <strong>curious learner</strong> who thrives on solving challenging problems. I enjoy transforming complex data into actionable insights, building robust backend systems, and creating user-friendly web interfaces. My strong analytical mindset, combined with attention to detail, allows me to deliver high-quality solutions efficiently. I am also <strong>collaborative, adaptable, and eager to continuously grow</strong>—always ready to contribute to impactful projects.
+        </p>
 
-    </section>
+        <!-- Info List -->
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item" style="font-size: 1.15rem;">
+            <i class="fa-solid fa-graduation-cap text-primary"></i> 
+            <span class="fw-semibold">B.Tech (CSE)</span>
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-envelope text-danger"></i> email@example.com
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-location-dot text-success"></i> India
+          </li>
+        </ul>
 
-
-    
-
-    <section id="tech">
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="tech-stack">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Flutter</span>
-        <span>DAX</span>
-        <span>GitHub</span>
-        <span>HTML/CSS/JS</span>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <p>Let's connect on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> or view my work on <a href="https://github.com" target="_blank">GitHub</a>.</p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Sanjana Sulakhe</p>
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fa-brands fa-html5 fa-3x text-danger"></i>
+          <h5>HTML</h5>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fa-brands fa-css3-alt fa-3x text-primary"></i>
+          <h5>CSS</h5>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fa-brands fa-js fa-3x text-warning"></i>
+          <h5>JavaScript</h5>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <i class="fa-brands fa-bootstrap fa-3x text-purple"></i>
+          <h5>Bootstrap</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A responsive portfolio built with HTML, CSS, Bootstrap.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- More projects here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATES ================= -->
+  <!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="py-5 bg-light">
+  <div class="container">
+
+    <!-- Section Title -->
+    <h2 class="text-center mb-5">Certificates</h2>
+
+    <!-- ===== Featured Professional Certificates ===== -->
+    <h4 class="text-center mb-4">Professional Certificates</h4>
+    <div class="row g-4 justify-content-center">
+      <!-- Certificate 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/ibm1.png" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">Data Analyst</h5>
+          <p class="card-text">edX / IBM</p>
+          <a href="https://credentials.edx.org/credentials/ffed9c77c4f74a588edc91f7f2027743/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+      <!-- Certificate 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/davidson.png" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">Fundamentals of Data Visualization with Power BI</h5>
+          <p class="card-text">edX / Davidson</p>
+          <a href="https://credentials.edx.org/credentials/d1170bb8b3044d71853be36f744b3a24/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+      <!-- Certificate 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/ibm1.png" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">Generative AI for Data Engineering</h5>
+          <p class="card-text">edX / IBM</p>
+          <a href="https://credentials.edx.org/credentials/2966fec3de1c4330a75f4a1421e21616/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+      <!-- Certificate 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/adelaide.gif" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">Fundamentals of Project Management</h5>
+          <p class="card-text">edX / AdelaideX</p>
+          <a href="https://credentials.edx.org/credentials/bda4432dff47412488a577a91f6b8d00/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+      <!-- Certificate 5 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/ibm1.png" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">Generative AI for Data Analysts</h5>
+          <p class="card-text">edX / AdelaideX</p>
+          <a href="https://credentials.edx.org/credentials/657fdf6b46ef47259eb795f97cb359eb/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+      <!-- Certificate 6 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow p-3 h-100">
+          <img src="assets/davidson.png" alt="edX Logo" class="img-fluid mx-auto mb-3" style="height:60px;">
+          <h5 class="card-title">From Database to Dashboard using SQL and Power BI</h5>
+          <p class="card-text">edX / Davidson</p>
+          <a href="https://credentials.edx.org/credentials/657fdf6b46ef47259eb795f97cb359eb/" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+        </div>
+      </div>
+    </div> <!-- row -->
+
+    <!-- ===== Verified Certificates Carousel ===== -->
+    <h4 class="text-center mt-5 mb-4">Verified Certificates</h4>
+    <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Loop through all 23 certificates -->
+        <!-- Example for first 3, repeat for all 23 -->
+        <div class="carousel-item active">
+          <div class="cert-card p-4 mx-auto shadow rounded" style="max-width: 500px;">
+            <p class="fw-bold">Introduction to Project Management</p>
+            <p>AdelaideX | Completed on 11/28/2024</p>
+            <a href="https://credentials.edx.org/credentials/3b1b3508380f4f6cb1015516c90fb08b" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cert-card p-4 mx-auto shadow rounded" style="max-width: 500px;">
+            <p class="fw-bold">Data Analytics Basics for Everyone</p>
+            <p>IBM | Completed on 12/13/2024</p>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/f5d0df96111045d18d780bbb3309d7ba" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cert-card p-4 mx-auto shadow rounded" style="max-width: 500px;">
+            <p class="fw-bold">Analyzing Data with Excel</p>
+            <p>IBM | Completed on 12/15/2024</p>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/a3a663249f634a549dfaba8bcb4759f4" target="_blank" class="btn btn-outline-primary btn-sm">View Certificate</a>
+          </div>
+        </div>
+        <!-- Continue similarly for all 23 verified certificates -->
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">Resume</h2>
+      <p>Download my resume to know more about my journey.</p>
+      <a href="assets/Sanjana-Resume.pdf" class="btn btn-primary btn-lg" download>
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="mb-4">Contact Me</h2>
+      <p><i class="fa-solid fa-envelope"></i> sanjanasulakhe23@gmail.com</p>
+      <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/sanjana</p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="text-center py-3 bg-light">
+    <p>&copy; 2025 Sanjana | All Rights Reserved</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
